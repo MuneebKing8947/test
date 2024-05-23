@@ -1,34 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
-import { Menubar } from 'primereact/menubar';
-import logo from '../Assets/logo.png';
+import { Link } from 'react-router-dom';
+import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../App.css';
-
+import logo from '../Assets/logo.png';
 const Header = () => {
-  const items = [
-    { label: <Link to="/">Home</Link> }, 
-    { label: <Link to="/find-a-doctor">Find a doctor</Link> },
-    { label: <Link to="/apps">Apps</Link> },
-    { label: <Link to="/testimonials">Testimonials</Link> },
-    { label: <Link to="/about-us">About us</Link> }
-  ];
-
   return (
-    <>
-    <div className='container-fluid mt-4 header'>
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-6 col-md-4">
-            <img src={logo} alt="Logo" className="logo" />
-          </div>
-          <div className="col-6 col-md-8">
-            <Menubar model={items} className="custom-menubar mt-4" />
-          </div>
-        </div>
-      </div>
-    </div>
-    </>
+    <Navbar  expand="lg" className='navbar '>
+      <Navbar.Brand >
+        <Link to="/">
+          <img
+            src={logo}
+            height="30"
+            className="d-inline-block align-top"
+            alt="Logo"
+          />
+        </Link>
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Nav>
+          <Link to="/" className="nav-link" style={{ marginRight: '10px' }}>Home</Link>
+          <Link to="/find-a-doctor" className="nav-link" style={{ marginRight: '10px' }}>find a doctor</Link>
+          <Link to="/apps" className="nav-link" style={{ marginRight: '10px' }}>Apps</Link>
+          <Link to="/testimonials" className="nav-link" style={{ marginRight: '10px' }}>Testimonials</Link> {/* Assuming you have a route set up for apply */}
+          <Link to="/about-us" className="nav-link" style={{ marginRight: '10px' }}>About us</Link> {/* Assuming you have a route set up for apply */}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 

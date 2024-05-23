@@ -3,13 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Service from './components/Service';
 import Cards from './components/Cards';
-import Contant6 from './components/Contant6';
-import Contant5 from './components/Contant5';
+import HealthProviders from './components/HealthProviders';
+import MobileApps from './components/MobileApps';
 import Carousell from './components/Carousell';
 import Artical from './components/Artical';
 import Footer from './components/Footer';
 import Healthcare from './components/Healthcare';
-
 function App() {
   return (
     <Router>
@@ -19,8 +18,8 @@ function App() {
           <Healthcare />
           <Service />
           <Cards />
-          <Contant6 />
-          <Contant5 />
+          <HealthProviders />
+          <MobileApps />
           <Carousell />
           <Artical />
           <Footer />
@@ -45,5 +44,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
