@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../Assets/logo.png';
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <Navbar  expand="lg" className='navbar '>
       <Navbar.Brand >
@@ -22,8 +22,8 @@ const Header = () => {
           <Link to="/" className="nav-link" style={{ marginRight: '10px' }}>Home</Link>
           <Link to="/find-a-doctor" className="nav-link" style={{ marginRight: '10px' }}>find a doctor</Link>
           <Link to="/apps" className="nav-link" style={{ marginRight: '10px' }}>Apps</Link>
-          <Link to="/testimonials" className="nav-link" style={{ marginRight: '10px' }}>Testimonials</Link> {/* Assuming you have a route set up for apply */}
-          <Link to="/about-us" className="nav-link" style={{ marginRight: '10px' }}>About us</Link> {/* Assuming you have a route set up for apply */}
+          <Link to="/testimonials" className="nav-link" style={{ marginRight: '10px' }}>Testimonials</Link>
+          <Link to="/about-us" className="nav-link" style={{ marginRight: '10px' }}>About us</Link> 
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -1,7 +1,7 @@
 import React from 'react';
 import image from '../Assets/Frame4.png';
 import { Button } from 'primereact/button';
-const MobileApps = () => {
+const MobileApps: React.FC = () => {
   return (
     <div className="container d-flex justify-content-around app">
       <div className="row">

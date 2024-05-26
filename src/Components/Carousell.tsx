@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import frame from '../Assets/Group 5.png';
 
-const Carousell = () => {
+const Carousell: React.FC = () => {
   return (
     <div className='container mt-5'>
       <Carousel interval={3000}>
