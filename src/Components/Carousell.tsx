@@ -2,7 +2,6 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import frame from '../Assets/Group 5.png';
-
 const Carousell: React.FC = () => {
   return (
     <div className='container mt-5'>

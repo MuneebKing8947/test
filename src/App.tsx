@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import Service from './Components/Service';
@@ -9,7 +10,6 @@ import Carousell from './Components/Carousell';
 import Artical from './Components/Artical';
 import Footer from './Components/Footer';
 import Healthcare from './Components/Healthcare';
-
 const App: React.FC = () => {
   return (
     <Router>

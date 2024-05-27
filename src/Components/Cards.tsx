@@ -1,14 +1,12 @@
 import React from 'react';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
-import '../App.css';
 import SearchDoctor from '../Assets/Group.png';
 import OnlinePharmacy from '../Assets/Frame.png';
 import Consultation from '../Assets/Frame1.png';
 import DetailsInfo from '../Assets/Frame2.png';
 import EmergencyCare from '../Assets/Frame3.png';
 import Tracking from '../Assets/Group1.png';
-
 const Cards: React.FC = () => {
   return (
     <div className="container mt-5">

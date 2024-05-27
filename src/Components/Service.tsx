@@ -1,7 +1,5 @@
 import React from 'react';
-import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 const Service: React.FC = () => {
   return (
     <div className="service container text-center mt-5">

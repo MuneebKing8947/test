@@ -5,7 +5,6 @@ import medicines from '../Assets/image 3.png';
 import Facial from '../Assets/image 4.png';
 import Arrow from '../Assets/arrow.png';
 import { Card } from 'primereact/card';
-
 const Artical: React.FC = () => {
   return (
     <div className="container mt-5">
